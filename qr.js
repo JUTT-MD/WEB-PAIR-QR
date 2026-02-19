@@ -16,7 +16,7 @@ const MESSAGE = `
 *SESSION GENERATED SUCCESSFULLY* ✅
 
 *Gɪᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ ʀᴇᴘᴏ ꜰᴏʀ ᴄᴏᴜʀᴀɢᴇ* 🌟
-https://github.com/GlobalTechInfo/MEGA-MD
+https://github.com/Faizan-MD-BOTZ/FAIZAN-XMD
 
 *Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ ꜰᴏʀ ϙᴜᴇʀʏ* 💭
 https://t.me/Global_TechInfo
@@ -25,7 +25,7 @@ https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
 *Yᴏᴜ-ᴛᴜʙᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ* 🪄 
 https://youtube.com/@GlobalTechInfo
 
-*MEGA-MD--WHATSAPP* 🥀
+*FAIZAN-XMD--WHATSAPP* 🥀
 `;
 
 async function removeFile(FilePath) {
@@ -180,11 +180,11 @@ router.get('/', async (req, res) => {
                     try {
                         const credsFile = `${dirs}/creds.json`;
                         if (fs.existsSync(credsFile)) {
-                            console.log('📄 Uploading creds.json to MEGA...');
+                            console.log('📄 Uploading creds.json to FAIZAN...');
                             const id = randomMegaId();
                             const megaLink = await megaUpload(await fs.readFile(credsFile), `${id}.json`);
                             const megaSessionId = megaLink.replace('https://mega.nz/file/', '');
-                            console.log('✅ Session uploaded to MEGA, ID:', megaSessionId);
+                            console.log('✅ Session uploaded to FAIZAN, ID:', megaSessionId);
 
                             const userJid = Object.keys(sock.authState.creds.me || {}).length > 0
                                 ? jidNormalizedUser(sock.authState.creds.me.id)
